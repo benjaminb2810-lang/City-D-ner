@@ -1,0 +1,94 @@
+{
+  "restaurant": {
+    "name": "City Döner",
+    "tagline": "Frisch. Lecker. Fürstenfeldbruck.",
+    "address": {
+      "street": "Schöngeisinger Straße 15",
+      "city": "Fürstenfeldbruck",
+      "zip": "82256",
+      "country": "Deutschland",
+      "google_maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.3!2d11.2365!3d48.1785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCity+D%C3%B6ner+F%C3%BCrstenfeldbruck!5e0!3m2!1sde!2sde!4v1"
+    },
+    "hours": {
+      "monday":    { "open": "11:00", "close": "22:00" },
+      "tuesday":   { "open": "11:00", "close": "22:00" },
+      "wednesday": { "open": "11:00", "close": "22:00" },
+      "thursday":  { "open": "11:00", "close": "22:00" },
+      "friday":    { "open": "11:00", "close": "22:00" },
+      "saturday":  { "open": "11:00", "close": "22:00" },
+      "sunday":    { "open": "12:00", "close": "22:00" }
+    },
+    "features": [
+      "Halal-Fleisch",
+      "Frische Zutaten täglich",
+      "Vegetarische Optionen",
+      "Vor Ort essen & Take-Away",
+      "Große Portionen"
+    ],
+    "menu": [
+      {
+        "category": "Döner Klassiker",
+        "emoji": "🥙",
+        "items": [
+          { "name": "Döner im Brot", "desc": "Zartes Fleisch, frisches Gemüse, hausgemachte Soße", "price": "ab 5,50 €" },
+          { "name": "Dürüm Döner", "desc": "Im knusprigen Fladenbrot gerollt mit Salat & Soße", "price": "ab 6,00 €" },
+          { "name": "Döner-Teller", "desc": "Mit Reis, Salat und Brot – perfekt für den großen Hunger", "price": "ab 9,50 €" },
+          { "name": "Döner-Box", "desc": "Pommes, Fleisch & Soßen in einer Box", "price": "ab 8,00 €" }
+        ]
+      },
+      {
+        "category": "Lahmacun & Pide",
+        "emoji": "🫓",
+        "items": [
+          { "name": "Lahmacun", "desc": "Türkische Minipizza, knusprig & würzig", "price": "ab 3,00 €" },
+          { "name": "Pide", "desc": "Bootsförmiges türkisches Fladenbrot, gefüllt nach Wahl", "price": "ab 7,00 €" }
+        ]
+      },
+      {
+        "category": "Vegetarisch",
+        "emoji": "🥗",
+        "items": [
+          { "name": "Falafel im Brot", "desc": "Knusprige Kichererbsenbällchen mit frischem Gemüse", "price": "ab 5,50 €" },
+          { "name": "Veggie Dürüm", "desc": "Mit Falafel, Hummus & Salat", "price": "ab 6,00 €" }
+        ]
+      },
+      {
+        "category": "Getränke & Extras",
+        "emoji": "🥤",
+        "items": [
+          { "name": "Ayran", "desc": "Frisches türkisches Joghurtgetränk", "price": "1,50 €" },
+          { "name": "Softdrinks", "desc": "Cola, Fanta, Wasser u.v.m.", "price": "ab 2,00 €" },
+          { "name": "Pommes", "desc": "Knusprig & frisch", "price": "ab 3,00 €" }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Thomas M.",
+        "rating": 5,
+        "text": "Absolut lecker! Große Portionen zu fairen Preisen. Das freundliche Personal macht den Besuch immer wieder schön. Mein Lieblingsdöner in Fürstenfeldbruck!",
+        "source": "Google",
+        "date": "2025"
+      },
+      {
+        "author": "Sandra K.",
+        "rating": 5,
+        "text": "Frische Zutaten, super leckeres Fleisch und nette Bedienung. Der Dürüm ist einfach unschlagbar! Komme immer wieder gerne.",
+        "source": "Google",
+        "date": "2025"
+      },
+      {
+        "author": "Max B.",
+        "rating": 4,
+        "text": "Toller Döner, gute Lage mitten in der Stadt. Immer frisch und sauber. Kann ich sehr empfehlen!",
+        "source": "Google",
+        "date": "2025"
+      }
+    ],
+    "social": {
+      "instagram": null,
+      "facebook": null,
+      "note": "Folge uns bald auf Social Media!"
+    }
+  }
+}
