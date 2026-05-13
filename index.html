@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Döner Fürstenfeldbruck – Frisch. Lecker. Immer gut.</title>
+  <meta name="description" content="City Döner in Fürstenfeldbruck – Schöngeisinger Straße 15. Frische Döner, Dürüm, Lahmacun & mehr. Mo–Sa 11–22 Uhr, So 12–22 Uhr." />
+  <link rel="stylesheet" href="city-doener-style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header id="header">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="logo-icon">🥙</div>
+      <div class="logo-text">City <span>Döner</span></div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#menu">Speisekarte</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#reviews">Bewertungen</a></li>
+      <li><a href="#hours">Öffnungszeiten</a></li>
+      <li><a href="#map" class="nav-cta">Anfahrt</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Menü öffnen" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <!-- Floating particles -->
+  <div class="hero-particles" aria-hidden="true" id="particles"></div>
+
+  <div class="hero-content container">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span>🌟</span>
+        <span>Fürstenfeldbrucks beliebtester Döner</span>
+      </div>
+      <h1 class="hero-title">
+        Echte Küche.
+        <span class="accent">Echter Döner.</span>
+      </h1>
+      <p class="hero-sub">
+        Frisch zubereiteter Döner, Dürüm & mehr – mitten im Herzen von Fürstenfeldbruck.
+        Täglich für dich da, mit besten Zutaten und dem gewissen Etwas.
+      </p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">🍽️ Zur Speisekarte</a>
+        <a href="#map" class="btn-secondary">📍 Anfahrt</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-image-stack">
+        <div class="hero-img-main placeholder-img">
+          <span class="placeholder-icon">🥙</span>
+          <span>Hier könnten Ihre Bilder sein</span>
+        </div>
+
+        <div class="hero-float-card card-1">
+          <div class="float-card-icon">⏰</div>
+          <div class="float-card-text">
+            <div class="label">Heute geöffnet</div>
+            <div class="value" id="todayHours">11:00 – 22:00</div>
+          </div>
+        </div>
+
+        <div class="hero-float-card card-2">
+          <div class="float-card-icon">✅</div>
+          <div class="float-card-text">
+            <div class="label">Zertifiziert</div>
+            <div class="value">Halal Fleisch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LAUFBAND ===================== -->
+<div class="open-bar" aria-hidden="true">
+  <div class="open-bar-inner" id="openBarInner">
+    <!-- JS duplikates this for infinite scroll -->
+    <span class="open-bar-item"><span class="dot"></span> Jetzt geöffnet</span>
+    <span class="open-bar-item">📍 Schöngeisinger Str. 15, Fürstenfeldbruck</span>
+    <span class="open-bar-item">🕐 Mo–Sa: 11–22 Uhr &nbsp;|&nbsp; So: 12–22 Uhr</span>
+    <span class="open-bar-item">🥙 Döner · Dürüm · Lahmacun · Falafel</span>
+    <span class="open-bar-item">✅ Halal · Frische Zutaten · Große Portionen</span>
+    <span class="open-bar-item">📍 Schöngeisinger Str. 15, Fürstenfeldbruck</span>
+    <span class="open-bar-item">🕐 Mo–Sa: 11–22 Uhr &nbsp;|&nbsp; So: 12–22 Uhr</span>
+    <span class="open-bar-item">🥙 Döner · Dürüm · Lahmacun · Falafel</span>
+    <span class="open-bar-item">✅ Halal · Frische Zutaten · Große Portionen</span>
+    <span class="open-bar-item"><span class="dot"></span> Jetzt geöffnet</span>
+    <span class="open-bar-item">📍 Schöngeisinger Str. 15, Fürstenfeldbruck</span>
+    <span class="open-bar-item">🕐 Mo–Sa: 11–22 Uhr &nbsp;|&nbsp; So: 12–22 Uhr</span>
+    <span class="open-bar-item">🥙 Döner · Dürüm · Lahmacun · Falafel</span>
+    <span class="open-bar-item">✅ Halal · Frische Zutaten · Große Portionen</span>
+  </div>
+</div>
+
+<!-- ===================== ÜBER UNS ===================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-images reveal-left">
+        <div class="about-deco"></div>
+        <div class="about-img-1">
+          <div class="about-img-placeholder">
+            <span class="ph-icon">🥙</span>
+            <span>Bild: Frischer Döner</span>
+            <span class="ph-label">Hier könnten Ihre Bilder sein</span>
+          </div>
+        </div>
+        <div class="about-img-2">
+          <div class="about-img-placeholder">
+            <span class="ph-icon">🏪</span>
+            <span>Bild: Unser Laden</span>
+            <span class="ph-label">Hier könnten Ihre Bilder sein</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal-right">
+        <span class="section-label">Über uns</span>
+        <h2>Liebe zum<br>guten Essen</h2>
+        <p>
+          City Döner ist <em>Ihr</em> Döner-Imbiss im Herzen von Fürstenfeldbruck.
+          Direkt in der Schöngeisinger Straße gelegen, verwöhnen wir unsere Gäste
+          täglich mit frisch zubereitetem Fleisch, knackigem Gemüse und hausgemachten Soßen.
+        </p>
+        <p>
+          Ob schnell zum Mitnehmen oder gemütlich vor Ort – bei uns bekommst du
+          Qualität, die schmeckt. Große Portionen, faire Preise und ein Lächeln
+          obendrauf.
+        </p>
+
+        <div class="features-grid" id="featuresGrid">
+          <!-- Loaded via JS from JSON -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPEISEKARTE ===================== -->
+<section class="menu-section" id="menu">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" style="color:var(--gold)">Speisekarte</span>
+      <h2>Was darf's sein?</h2>
+      <p class="section-sub">Alles frisch, alles lecker – täglich für dich.</p>
+    </div>
+
+    <div class="menu-tabs reveal" id="menuTabs">
+      <!-- JS renders tabs -->
+    </div>
+
+    <div id="menuCategories">
+      <!-- JS renders categories -->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERIE ===================== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <span class="section-label" style="display:block;text-align:center">Einblicke</span>
+    <h2 class="reveal">Bilder aus unserem Laden</h2>
+    <p class="section-sub-light reveal">Frisches Essen, gemütliche Atmosphäre.</p>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="gp-icon">🍽️</span>
+          <span class="gp-text">Döner Teller<br><em>Hier könnten Ihre Bilder sein</em></span>
+        </div>
+        <div class="gallery-overlay"><span>Döner Teller</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="gp-icon">🥙</span>
+          <span class="gp-text">Dürüm frisch gerollt<br><em>Hier könnten Ihre Bilder sein</em></span>
+        </div>
+        <div class="gallery-overlay"><span>Dürüm Döner</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="gp-icon">🫓</span>
+          <span class="gp-text">Lahmacun<br><em>Hier könnten Ihre Bilder sein</em></span>
+        </div>
+        <div class="gallery-overlay"><span>Lahmacun</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="gp-icon">🏪</span>
+          <span class="gp-text">Unser Imbiss<br><em>Hier könnten Ihre Bilder sein</em></span>
+        </div>
+        <div class="gallery-overlay"><span>Unser Laden</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="gp-icon">🥗</span>
+          <span class="gp-text">Frische Zutaten<br><em>Hier könnten Ihre Bilder sein</em></span>
+        </div>
+        <div class="gallery-overlay"><span>Frische Zutaten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BEWERTUNGEN ===================== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Kundenstimmen</span>
+      <h2>Was unsere Gäste sagen</h2>
+    </div>
+
+    <div class="reviews-grid" id="reviewsGrid">
+      <!-- JS renders reviews -->
+    </div>
+
+    <div class="google-badge reveal" style="margin-top:40px;">
+      <span class="google-g">G</span>
+      <span>Bewertet auf Google Maps</span>
+      <span style="color:#FBBC05">★★★★★</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÖFFNUNGSZEITEN ===================== -->
+<section class="hours" id="hours">
+  <div class="container">
+    <div class="hours-grid">
+      <div class="reveal-left">
+        <span class="section-label" style="color:var(--gold)">Wann wir da sind</span>
+        <h2>Öffnungszeiten</h2>
+        <div class="hours-table" id="hoursTable">
+          <!-- JS renders from JSON data -->
+        </div>
+      </div>
+
+      <div class="reveal-right" style="display:flex;flex-direction:column;gap:24px;justify-content:center;">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:32px;">
+          <div style="font-size:2.5rem;margin-bottom:12px;">📍</div>
+          <h3 style="font-family:'Playfair Display',serif;color:white;font-size:1.3rem;margin-bottom:10px;">Adresse</h3>
+          <p style="color:rgba(255,255,255,0.6);line-height:1.75;">
+            Schöngeisinger Straße 15<br>
+            82256 Fürstenfeldbruck<br>
+            Bayern, Deutschland
+          </p>
+          <a href="https://maps.google.com/?q=Schöngeisinger+Straße+15+Fürstenfeldbruck" target="_blank" rel="noopener" class="map-route-btn" style="margin-top:18px;display:block;">
+            🗺️ In Google Maps öffnen
+          </a>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:32px;">
+          <div style="font-size:2.5rem;margin-bottom:12px;">✅</div>
+          <h3 style="font-family:'Playfair Display',serif;color:white;font-size:1.3rem;margin-bottom:10px;">Was uns auszeichnet</h3>
+          <div id="featuresListDark" style="display:flex;flex-direction:column;gap:10px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GOOGLE MAPS ===================== -->
+<section class="map-section" id="map">
+  <iframe
+    class="map-frame"
+    title="City Döner Fürstenfeldbruck auf Google Maps"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.5!2d11.2379!3d48.1795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e73dacd1f6c87%3A0x9c7e7d3a2c0b1e5f!2sSchöngeisinger+Str.+15%2C+82256+Fürstenfeldbruck!5e0!3m2!1sde!2sde!4v1715000000000!5m2!1sde!2sde"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <div class="map-overlay-card">
+    <h3>🥙 City Döner</h3>
+    <div class="map-info-item">
+      <div class="mi-icon">📍</div>
+      <div>Schöngeisinger Straße 15<br>82256 Fürstenfeldbruck</div>
+    </div>
+    <div class="map-info-item">
+      <div class="mi-icon">🕐</div>
+      <div>Mo–Sa: 11:00–22:00 Uhr<br>So: 12:00–22:00 Uhr</div>
+    </div>
+    <div class="map-info-item">
+      <div class="mi-icon">✅</div>
+      <div>Halal · Take-Away · Vor Ort</div>
+    </div>
+    <a
+      href="https://maps.google.com/maps/dir//Schöngeisinger+Straße+15,+82256+Fürstenfeldbruck"
+      target="_blank"
+      rel="noopener"
+      class="map-route-btn"
+    >
+      🗺️ Route berechnen
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>City <span>Döner</span></h3>
+        <p>Ihr Döner-Imbiss im Herzen von Fürstenfeldbruck – frisch, lecker und täglich für Sie da.</p>
+        <div class="halal-badge" style="margin-top:18px;">✅ Halal-Fleisch zertifiziert</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#menu">Speisekarte</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#reviews">Bewertungen</a></li>
+          <li><a href="#hours">Öffnungszeiten</a></li>
+          <li><a href="#map">Anfahrt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Schöngeisinger Str. 15</li>
+          <li>82256 Fürstenfeldbruck</li>
+          <li style="margin-top:8px;"><a href="https://maps.google.com/?q=Schöngeisinger+Straße+15+Fürstenfeldbruck" target="_blank" rel="noopener" style="color:var(--gold);">Google Maps ↗</a></li>
+        </ul>
+
+        <h4 style="margin-top:24px;">Öffnungszeiten</h4>
+        <ul>
+          <li>Mo–Sa: 11:00–22:00</li>
+          <li>Sonntag: 12:00–22:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 City Döner Fürstenfeldbruck. Alle Rechte vorbehalten.</span>
+      <span style="color:rgba(255,255,255,0.35);font-size:0.78rem;">Mit ❤️ erstellt für City Döner</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+// ---- Daten aus JSON (inline für Standalone-Nutzung) ----
+const DATA = {
+  "restaurant": {
+    "name": "City Döner",
+    "tagline": "Frisch. Lecker. Fürstenfeldbruck.",
+    "hours": {
+      "monday":    { "open": "11:00", "close": "22:00" },
+      "tuesday":   { "open": "11:00", "close": "22:00" },
+      "wednesday": { "open": "11:00", "close": "22:00" },
+      "thursday":  { "open": "11:00", "close": "22:00" },
+      "friday":    { "open": "11:00", "close": "22:00" },
+      "saturday":  { "open": "11:00", "close": "22:00" },
+      "sunday":    { "open": "12:00", "close": "22:00" }
+    },
+    "features": [
+      "Halal-Fleisch", "Frische Zutaten täglich",
+      "Vegetarische Optionen", "Vor Ort essen & Take-Away",
+      "Große Portionen", "Faire Preise"
+    ],
+    "menu": [
+      {
+        "category": "Döner Klassiker", "emoji": "🥙",
+        "items": [
+          { "name": "Döner im Brot", "desc": "Zartes Fleisch, frisches Gemüse, hausgemachte Soße", "price": "ab 5,50 €" },
+          { "name": "Dürüm Döner", "desc": "Im knusprigen Fladenbrot gerollt mit Salat & Soße", "price": "ab 6,00 €" },
+          { "name": "Döner-Teller", "desc": "Mit Reis, Salat und Brot – für den großen Hunger", "price": "ab 9,50 €" },
+          { "name": "Döner-Box", "desc": "Pommes, Fleisch & Soßen in einer Box", "price": "ab 8,00 €" }
+        ]
+      },
+      {
+        "category": "Lahmacun & Pide", "emoji": "🫓",
+        "items": [
+          { "name": "Lahmacun", "desc": "Türkische Minipizza, knusprig & würzig", "price": "ab 3,00 €" },
+          { "name": "Pide", "desc": "Türkisches Fladenbrot, gefüllt nach Wahl", "price": "ab 7,00 €" }
+        ]
+      },
+      {
+        "category": "Vegetarisch", "emoji": "🥗",
+        "items": [
+          { "name": "Falafel im Brot", "desc": "Knusprige Kichererbsenbällchen mit frischem Gemüse", "price": "ab 5,50 €" },
+          { "name": "Veggie Dürüm", "desc": "Mit Falafel, Hummus & Salat", "price": "ab 6,00 €" }
+        ]
+      },
+      {
+        "category": "Getränke & Extras", "emoji": "🥤",
+        "items": [
+          { "name": "Ayran", "desc": "Frisches türkisches Joghurtgetränk", "price": "1,50 €" },
+          { "name": "Softdrinks", "desc": "Cola, Fanta, Wasser u.v.m.", "price": "ab 2,00 €" },
+          { "name": "Pommes", "desc": "Knusprig & frisch", "price": "ab 3,00 €" }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Thomas M.", "rating": 5,
+        "text": "Absolut lecker! Große Portionen zu fairen Preisen. Das freundliche Personal macht den Besuch immer wieder schön. Mein Lieblingsdöner in Fürstenfeldbruck!"
+      },
+      {
+        "author": "Sandra K.", "rating": 5,
+        "text": "Frische Zutaten, super leckeres Fleisch und nette Bedienung. Der Dürüm ist einfach unschlagbar! Komme immer wieder gerne."
+      },
+      {
+        "author": "Max B.", "rating": 4,
+        "text": "Toller Döner, gute Lage mitten in der Stadt. Immer frisch und sauber. Kann ich sehr empfehlen!"
+      }
+    ]
+  }
+};
+
+const R = DATA.restaurant;
+
+// ---- Particles ----
+const particleContainer = document.getElementById('particles');
+const colors = ['#C0392B','#D4A017','#FFFFFF'];
+for (let i = 0; i < 18; i++) {
+  const p = document.createElement('div');
+  p.classList.add('particle');
+  const size = Math.random() * 8 + 4;
+  p.style.cssText = `
+    width:${size}px; height:${size}px;
+    left:${Math.random()*100}%;
+    background:${colors[Math.floor(Math.random()*colors.length)]};
+    animation-duration:${8 + Math.random()*14}s;
+    animation-delay:${Math.random()*10}s;
+  `;
+  particleContainer.appendChild(p);
+}
+
+// ---- Hamburger ----
+const ham = document.getElementById('hamburger');
+const nav = document.getElementById('navLinks');
+ham.addEventListener('click', () => nav.classList.toggle('open'));
+ham.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') nav.classList.toggle('open'); });
+
+// ---- Menu Tabs ----
+const tabsEl = document.getElementById('menuTabs');
+const catEl  = document.getElementById('menuCategories');
+
+R.menu.forEach((cat, i) => {
+  const tab = document.createElement('button');
+  tab.classList.add('menu-tab');
+  if (i === 0) tab.classList.add('active');
+  tab.textContent = `${cat.emoji} ${cat.category}`;
+  tab.setAttribute('aria-label', `Kategorie: ${cat.category}`);
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.menu-category').forEach(c => c.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(`cat-${i}`).classList.add('active');
+  });
+  tabsEl.appendChild(tab);
+
+  const div = document.createElement('div');
+  div.classList.add('menu-category');
+  div.id = `cat-${i}`;
+  if (i === 0) div.classList.add('active');
+
+  const grid = document.createElement('div');
+  grid.classList.add('menu-items-grid');
+
+  cat.items.forEach(item => {
+    grid.innerHTML += `
+      <div class="menu-card">
+        <div class="menu-card-top">
+          <h4>${item.name}</h4>
+          <span class="menu-price">${item.price}</span>
+        </div>
+        <p>${item.desc}</p>
+      </div>`;
+  });
+
+  div.appendChild(grid);
+  catEl.appendChild(div);
+});
+
+// ---- Features ----
+const featGrid = document.getElementById('featuresGrid');
+const featDark = document.getElementById('featuresListDark');
+
+const featureIcons = ['✅','🥩','🥗','🛍️','🍽️','💰'];
+R.features.forEach((f, i) => {
+  featGrid.innerHTML += `
+    <div class="feature-item">
+      <div class="fi-icon">${featureIcons[i] || '✅'}</div>
+      <span>${f}</span>
+    </div>`;
+  featDark.innerHTML += `
+    <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.7);font-size:0.9rem;font-weight:600;">
+      <span style="font-size:1.1rem;">${featureIcons[i] || '✅'}</span>
+      <span>${f}</span>
+    </div>`;
+});
+
+// ---- Reviews ----
+const revGrid = document.getElementById('reviewsGrid');
+R.reviews.forEach(rev => {
+  const stars = '★'.repeat(rev.rating) + '☆'.repeat(5 - rev.rating);
+  const initials = rev.author.split(' ').map(n => n[0]).join('');
+  revGrid.innerHTML += `
+    <div class="review-card reveal">
+      <div class="review-stars">${[...rev.author].slice(0,0).join('')}${'<span class="star">★</span>'.repeat(rev.rating)}</div>
+      <p class="review-text">"${rev.text}"</p>
+      <div class="review-author">
+        <div class="author-avatar">${initials}</div>
+        <div class="author-info">
+          <div class="name">${rev.author}</div>
+          <div class="source">Google Bewertung</div>
+        </div>
+      </div>
+    </div>`;
+});
+
+// ---- Hours Table ----
+const hoursEl = document.getElementById('hoursTable');
+const dayNames = {
+  monday:'Montag', tuesday:'Dienstag', wednesday:'Mittwoch',
+  thursday:'Donnerstag', friday:'Freitag', saturday:'Samstag', sunday:'Sonntag'
+};
+const todayIdx = new Date().getDay(); // 0=Sun, 1=Mon...
+const dayKeys = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+const todayKey = dayKeys[todayIdx];
+
+const todayHoursEl = document.getElementById('todayHours');
+if (R.hours[todayKey]) {
+  todayHoursEl.textContent = `${R.hours[todayKey].open} – ${R.hours[todayKey].close}`;
+}
+
+dayKeys.forEach((key, idx) => {
+  const isToday = key === todayKey;
+  const h = R.hours[key];
+  hoursEl.innerHTML += `
+    <div class="hour-row ${isToday ? 'today' : ''}">
+      <span class="day">${dayNames[key]}${isToday ? '<span class="today-label">Heute</span>' : ''}</span>
+      <span class="time">${h.open} – ${h.close} Uhr</span>
+    </div>`;
+});
+
+// ---- Scroll Reveal ----
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+// ---- Header scroll shrink ----
+window.addEventListener('scroll', () => {
+  const h = document.getElementById('header');
+  if (window.scrollY > 60) h.style.background = 'rgba(26,16,8,0.99)';
+  else h.style.background = 'rgba(26,16,8,0.97)';
+});
+</script>
+
+</body>
+</html>
